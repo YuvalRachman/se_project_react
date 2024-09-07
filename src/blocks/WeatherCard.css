@@ -12,28 +12,40 @@
   position: absolute;
   top: 20px;
   left: 16px;
+  color: white;
 }
 .weather-card_image {
   object-fit: cover;
   object-position: right top;
   width: 100%;
+  min-width: 343px;
+}
+.cards__text {
+  font-size: 20px;
+  line-height: 24.8px;
 }
 .cards__list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: center;
 }
-.card__container {
+.card {
+  width: 323px;
   position: relative;
 
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 325px;
-  max-height: 328px;
+  /* max-width: 325px;
   min-width: 325px;
-  min-height: 328px;
+  max-height: 328px;
+
+  min-height: 328px; */
 }
 
 .card__name {
@@ -51,6 +63,8 @@
   z-index: 1;
   width: 73px;
   height: 24px;
+  border-radius: 5px;
+  z-index: auto;
 }
 
 .card__img {
